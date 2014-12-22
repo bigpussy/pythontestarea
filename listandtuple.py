@@ -27,7 +27,7 @@ print classmates[-1]
 print u"也可以修改某个位置的元素"
 classmates[1] = 'Sarah'
 print classmates[1]
-print u"修改最后一个元素"
+print u"list还可以加入不同类型的数据"
 classmates[-1] = 123
 print classmates
 print u"可以包含另外一个list"
