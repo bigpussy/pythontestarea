@@ -1,5 +1,5 @@
 print ">>>>>>>>>>>>>>>>>>>list"
-//创建一个list
+//鍒涘缓涓�涓猯ist
 classmates = ['Michael','Bob','Tracy']
 print classmates
 print len(classmates)
