@@ -2,7 +2,9 @@ print ">>>>>>>>>>>>>>>>>>>list"
 //创建一个list
 classmates = ['Michael','Bob','Tracy']
 print classmates
+//可以获取长度
 print len(classmates)
+//每个元素可以用相应id索引出来
 print classmates[0]
 print classmates[1]
 print classmates[2]
