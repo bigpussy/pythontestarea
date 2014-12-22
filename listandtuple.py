@@ -1,4 +1,5 @@
 print ">>>>>>>>>>>>>>>>>>>list"
+//创建一个list
 classmates = ['Michael','Bob','Tracy']
 print classmates
 print len(classmates)
