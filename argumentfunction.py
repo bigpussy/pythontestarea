@@ -58,7 +58,7 @@ func(b = 2, a = 1)
 func(1, 2, 3, 4)
 func(1, 2, 3, 4, 5)
 func(1, 2, 3, 4, 5, x = 99)
-
+print u"最牛逼的还有这个"
 args = (1, 2, 3, 4)
 kw = {'x':99}
 func(*args, **kw)
