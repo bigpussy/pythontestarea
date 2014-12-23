@@ -55,6 +55,6 @@ def fib(i, current = 0, next = 1):
   else:
     return fib(i - 1, next, current + next)
 
-print fib(10000000)
+print fib(100000)
 # also prints a big number,
 # but doesn't hit the recursion limit.
