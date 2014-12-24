@@ -7,5 +7,5 @@ class Student(object):
 bart = Student()
 
 print bart
-#bart.name = 'Simpson'
+#bart.name = 'Simpson' 
 print bart.name,bart.score
