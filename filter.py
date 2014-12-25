@@ -22,3 +22,4 @@ def isPrime(num):
 def isntPrime(num):
 	return not isPrime(num)
 print filter(isntPrime, range(2 , 100))
+print u"stop"
