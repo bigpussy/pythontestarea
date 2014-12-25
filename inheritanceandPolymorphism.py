@@ -36,3 +36,8 @@ def run_twice(animal):
 	animal.run()
 run_twice(Tortoise())
 
+print type(a)
+print type(b)
+import types
+
+print types
