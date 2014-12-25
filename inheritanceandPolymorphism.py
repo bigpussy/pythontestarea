@@ -4,6 +4,8 @@ print u"继承和多态"
 class Animal(object):
 	def run(self):
 		print 'Animal is running...'
+	def __len__(self):
+		return 100
 class Dog(Animal):
 	def run(self):
 		print 'Dog is running...'
