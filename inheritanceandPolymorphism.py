@@ -43,3 +43,4 @@ print type(b)
 import types
 
 print types
+print "end"
