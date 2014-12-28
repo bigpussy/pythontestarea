@@ -1,28 +1,25 @@
 # -*- coding: utf-8 -*-
 print u"条件判断"
-age = 20
-if age >= 18:
-	print 'Your age is', age
-	print 'adult'
+from Tkinter import *
+import tkMessageBox
 
-print u"也可以加入else语句"
-age = 3
-if age >= 18:
-	print 'Your age is', age
-	print 'adult'
-else:
-	print 'Your age is', age
-	print 'kid'
-print u"也可以加入elif语句,更加判断详细"
-age = 7
-if age >= 18:
-	print 'Your age is', age
-	print 'adult'
-elif age >= 6:
-	print 'Your age is', age
-	print 'teenager'
-else:
-	print 'Your age is', age
-	print 'kid'
+class Application(Frame):
+	def __init__(self, master=None):
+		Frame.__init__(self, master)
+		self.pack()
+		self.createWidgets()
+	def createWidgets(self):
+		self.nameInput = Entry(self)
+		self.nameInput.pack()
+		self.helloLabel = Label(self, text='Hello, world!')
+		self.helloLabel.pack()
+		self.quitButton = Button(self,text='Quit', command = self.hello)
+		self.quitButton.pack()
+	def hello(self):
+		name = self.nameInput.get() or 'world'
+		tkMessageBox.showinfo('Message', 'Hello, %s' % name)
+app = Application()
 
+app.master.title('Hello world')
+app.mainloop()
 
