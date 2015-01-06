@@ -1,9 +1,12 @@
+#include <unistd.h>
 int main()
 { 
-	for(;;)
+	int i;
+	while(1)
 	{
-		for(int i = 0; i < 9600000; i++);
+		for(i = 0; i < 9600000; i++);
 			Sleep(10);
 	}
+
 	return 0;
-}  
+}
