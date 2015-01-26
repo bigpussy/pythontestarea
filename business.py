@@ -22,5 +22,9 @@ class dbMgr:
 
 if __name__=='__main__':
 	with dbMgr() as cursor:
-		cursor.
+		p_out = 1
+		cursor.callproc('myproc',(p_out))
+		cursor.execute('select @p_out')
+		data = cursor.fetchall()
+		print data
 
